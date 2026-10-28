@@ -1,1 +1,49 @@
-asdasd
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOK - Platforma Quizowa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 class="logo">AOK <span>Quizy</span></h1>
+        </header>
+
+        <div id="start-screen" class="screen active">
+            <h2>Witaj w Strefie Quizów AOK!</h2>
+            <p>Sprawdź swoją wiedzę w naszym szybkim teście. Czy zdołasz zdobyć maksymalną liczbę punktów?</p>
+            <button id="start-btn" class="btn">Rozpocznij Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-info">
+                <span id="question-counter">Pytanie 1 z 4</span>
+                <span id="timer">Czas: 15s</span>
+            </div>
+            
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+
+            <h3 id="question-text">Tutaj pojawi się treść pytania?</h3>
+
+            <div id="answers-container" class="answers-grid">
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <h2>Koniec Quizu!</h2>
+            <p id="result-message">Twój wynik:</p>
+            <div class="score-card">
+                <span id="final-score">0</span> / <span id="max-score">4</span>
+            </div>
+            <button id="restart-btn" class="btn">Rozegraj ponownie</button>
+        </div>
+    </div>
+
+</html>
